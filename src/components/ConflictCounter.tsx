@@ -1,7 +1,7 @@
 
 function ConflictCounter({ conflictCount }) {
   return (
-    <div>Conflicts: {conflictCount}</div>
+    <div className="Time">Conflicts: {conflictCount}</div>
   );
 }
 
