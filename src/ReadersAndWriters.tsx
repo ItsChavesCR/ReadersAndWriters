@@ -3,8 +3,7 @@ import  { useState, useEffect} from 'react';
 import ConflictCounter from './components/ConflictCounter';
 import Counter from './components/Counter';
 import { ControlButtons } from './components/ControlButtons';
-import bookImage from './assets/book-image.png'
-import './ReadersAndWriters.css'
+import './styles/ReadersAndWriters.css'
 
 export function ReadersAndWriters() {
   
