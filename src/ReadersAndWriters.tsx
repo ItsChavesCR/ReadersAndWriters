@@ -54,8 +54,17 @@ export function ReadersAndWriters() {
   const getExecutionTime = () => {
     if (!startTime || !endTime) return 'N/A';
     const diff = endTime - startTime;
-    return `${Math.floor(diff / 1000)} seconds`;
+    const seconds = Math.floor(diff / 1000);
+    const minutes = Math.floor(seconds / 60);
+    const remainingSeconds = seconds % 60;
+  
+    if (minutes > 0) {
+      return `${minutes} minutes and ${remainingSeconds} seconds`;
+    } else {
+      return `${seconds} seconds`;
+    }
   };
+  
 
   return (
     <div className="App">
