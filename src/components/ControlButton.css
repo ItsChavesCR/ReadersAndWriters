@@ -1,0 +1,69 @@
+.Start{
+    width: 200px; 
+    padding: 15px; 
+    margin: 10px; 
+    border-radius: 25px; 
+    border: none;
+    background-color: #818CF8; 
+    color: white; 
+    font-size: 1em; 
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.Finish{
+    width: 200px; 
+    padding: 15px; 
+    margin: 10px; 
+    border-radius: 25px; 
+    border: none;
+    background-color: #818CF8; 
+    color: white; 
+    font-size: 1em; 
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.Reset{
+    width: 200px; 
+    padding: 15px; 
+    margin: 10px; 
+    border-radius: 25px; 
+    border: none;
+    background-color: #818CF8; 
+    color: white; 
+    font-size: 1em; 
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.Start:hover {
+    background-color: #4F46E5; 
+}
+
+.Finish:hover {
+    background-color: #4F46E5; 
+}
+
+.Reset:hover {
+    background-color: #4F46E5; 
+}
+
+/* Contenedor para los botones */
+.ControlButtons {
+    display: flex;
+    align-items: center;   
+    justify-content: center; 
+    margin-top: 50px; 
+  }
+
+.Time{
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    margin-top: 35px;  
+}
+

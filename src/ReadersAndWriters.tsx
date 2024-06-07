@@ -1,8 +1,10 @@
 // src/App.js
-import  { useState, useEffect } from 'react';
+import  { useState, useEffect} from 'react';
 import ConflictCounter from './components/ConflictCounter';
 import Counter from './components/Counter';
 import { ControlButtons } from './components/ControlButtons';
+import bookImage from './assets/book-image.png'
+import './ReadersAndWriters.css'
 
 export function ReadersAndWriters() {
   
@@ -58,14 +60,21 @@ export function ReadersAndWriters() {
 
   return (
     <div className="App">
+      <div className='header'>
       <h1>Readers and Writers</h1>
+      </div>
       <ControlButtons onStart={handleStart} onStop={handleStop} onReset={handleReset} startTime={startTime} />
-      <Counter readCount={readCount} writeCount={writeCount} />
-      <ConflictCounter conflictCount={conflictCount} />
-      <div> Execution time: {getExecutionTime()}</div>
+      <div className="info-container">
+        {startTime && <div>Hora de comienzo: {startTime.toLocaleTimeString()}</div>}
+        <Counter readCount={readCount} writeCount={writeCount} />
+        <ConflictCounter conflictCount={conflictCount} />
+        <div className='Time'> Execution time: {getExecutionTime()}</div>
+      </div>
     </div>
   );
 }
+
+
 
 
 

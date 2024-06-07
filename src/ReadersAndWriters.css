@@ -1,0 +1,39 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #6366F1; 
+    padding: 30px; 
+    margin-left: -20px; 
+    margin-right: -20px; 
+  }
+  
+  .book-image {
+    width: 50px; 
+    margin-right: 10px; 
+  }
+  
+  h1 {
+    margin: 0;
+    color: white; 
+  }
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.info-container {
+  background-color: #E0E7FF; 
+  border-radius: 25px; 
+  padding: 20px; 
+  margin: 20px auto; 
+  width: 80%; 
+  max-width: 600px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  text-align: center; 
+}
