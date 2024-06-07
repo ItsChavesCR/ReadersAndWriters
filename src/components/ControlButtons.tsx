@@ -1,4 +1,4 @@
-import './ControlButton.css'
+import '../styles/ControlButton.css'
 
 export function ControlButtons({ onStart, onStop, onReset, startTime }) {
   return (
